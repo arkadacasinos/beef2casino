@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beef2casino.vercel.app/sitemap.xml

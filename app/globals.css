@@ -1,0 +1,328 @@
+@import 'tailwindcss';
+
+/* ============================================================
+   Beef Casino — landing styles (mangled class prefix: bfc-)
+   ============================================================ */
+
+:root {
+  --bfc-red: #a31621;
+  --bfc-red-dark: #7a0f18;
+  --bfc-charcoal: #141210;
+  --bfc-cream: #f5f1ea;
+  --bfc-gold: #d4a017;
+  --bfc-ink: #1c1917;
+  --bfc-muted: #6b6259;
+  --bfc-white: #ffffff;
+}
+
+html {
+  background-color: var(--bfc-cream);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  color: var(--bfc-ink);
+  background-color: var(--bfc-cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------- Layout ---------- */
+.bfc-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.bfc-main {
+  flex: 1 0 auto;
+}
+
+/* ---------- Header ---------- */
+.bfc-header {
+  background-color: var(--bfc-charcoal);
+  color: var(--bfc-cream);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.bfc-header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.bfc-logo {
+  font-family: var(--font-oswald), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--bfc-cream);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.bfc-logo span {
+  color: var(--bfc-gold);
+}
+
+.bfc-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.bfc-nav-link {
+  color: var(--bfc-cream);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.bfc-nav-link:hover {
+  opacity: 1;
+  color: var(--bfc-gold);
+}
+
+/* ---------- Hero ---------- */
+.bfc-hero {
+  background-color: var(--bfc-charcoal);
+  color: var(--bfc-cream);
+  padding: 2.5rem 1rem 3rem;
+}
+
+.bfc-hero-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bfc-h1 {
+  font-family: var(--font-oswald), sans-serif;
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.bfc-h1 span {
+  color: var(--bfc-gold);
+}
+
+.bfc-lead {
+  font-size: 1.0625rem;
+  color: #e7e0d6;
+  margin: 0;
+  max-width: 60ch;
+}
+
+.bfc-hero-img {
+  width: 100%;
+  border-radius: 0.75rem;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* ---------- CTA ---------- */
+.bfc-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  background-color: var(--bfc-red);
+  color: var(--bfc-white);
+  text-decoration: none;
+  font-family: var(--font-oswald), sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.875rem 1.75rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.bfc-cta:hover {
+  background-color: var(--bfc-red-dark);
+}
+
+/* ---------- Sections ---------- */
+.bfc-section {
+  padding: 2.5rem 1rem;
+}
+
+.bfc-section--alt {
+  background-color: var(--bfc-white);
+}
+
+.bfc-section-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bfc-copy-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bfc-h2 {
+  font-family: var(--font-oswald), sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0;
+  color: var(--bfc-red-dark);
+  text-transform: uppercase;
+}
+
+.bfc-text {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--bfc-ink);
+  max-width: 68ch;
+}
+
+.bfc-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bfc-list li {
+  font-size: 1rem;
+}
+
+.bfc-media {
+  margin-top: 0.25rem;
+}
+
+.bfc-img {
+  width: 100%;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+.bfc-img--wide {
+  aspect-ratio: 16 / 9;
+}
+
+.bfc-img--portrait {
+  aspect-ratio: 9 / 16;
+  max-width: 360px;
+}
+
+/* ---------- Footer ---------- */
+.bfc-footer {
+  background-color: var(--bfc-charcoal);
+  color: var(--bfc-cream);
+  padding: 2.5rem 1rem;
+}
+
+.bfc-footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bfc-footer-title {
+  font-family: var(--font-oswald), sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--bfc-gold);
+}
+
+.bfc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bfc-tag {
+  display: inline-block;
+  color: var(--bfc-cream);
+  text-decoration: none;
+  font-size: 0.8125rem;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid rgba(245, 241, 234, 0.25);
+  border-radius: 999px;
+  opacity: 0.9;
+}
+
+.bfc-tag:hover {
+  border-color: var(--bfc-gold);
+  color: var(--bfc-gold);
+}
+
+.bfc-copy {
+  font-size: 0.8125rem;
+  color: #a89f92;
+  margin: 0;
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 768px) {
+  .bfc-header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bfc-h1 {
+    font-size: 3rem;
+  }
+
+  .bfc-h2 {
+    font-size: 1.875rem;
+  }
+
+  .bfc-hero {
+    padding: 4rem 1.5rem 4.5rem;
+  }
+
+  .bfc-section {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .bfc-section-inner {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .bfc-copy-block {
+    flex: 1;
+  }
+
+  .bfc-media {
+    flex: 0 0 340px;
+    margin-top: 0;
+  }
+}
