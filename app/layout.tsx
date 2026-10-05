@@ -71,6 +71,43 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className={`${oswald.variable} ${inter.variable}`}>
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#A31621" />
+        <title>Beef Casino официальный сайт — играть онлайн и зеркало | Биф Казино</title>
+        <meta
+          name="description"
+          content="Beef Casino официальный сайт: регистрация, вход и игра онлайн. Рабочее зеркало Биф Казино на сегодня, бонусы и быстрые выплаты. Играйте с телефона без блокировок."
+        />
+        <link rel="canonical" href="https://beef2casino.vercel.app" />
+        <meta name="robots" content="index, follow" />
+        <link rel="icon" href="/icon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/icon.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://beef2casino.vercel.app" />
+        <meta property="og:site_name" content="Beef Casino" />
+        <meta property="og:locale" content="ru_RU" />
+        <meta
+          property="og:title"
+          content="Beef Casino официальный сайт — играть онлайн и зеркало | Биф Казино"
+        />
+        <meta
+          property="og:description"
+          content="Beef Casino официальный сайт: регистрация, вход и игра онлайн. Рабочее зеркало Биф Казино на сегодня, бонусы и быстрые выплаты."
+        />
+        <meta property="og:image" content="https://beef2casino.vercel.app/images/beef-hero.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Beef Casino официальный сайт — играть онлайн и зеркало | Биф Казино"
+        />
+        <meta
+          name="twitter:description"
+          content="Beef Casino официальный сайт: регистрация, вход и игра онлайн. Рабочее зеркало Биф Казино на сегодня."
+        />
+        <meta name="twitter:image" content="https://beef2casino.vercel.app/images/beef-hero.jpg" />
+      </head>
       <body>{children}</body>
     </html>
   )
