@@ -72,6 +72,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className={`${oswald.variable} ${inter.variable}`}>
       <head>
+        <meta name="yandex-verification" content="efa14c03c9f5266e" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#A31621" />
